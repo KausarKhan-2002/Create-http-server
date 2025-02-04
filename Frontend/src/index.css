@@ -1,0 +1,132 @@
+/* General Dark Mode Styles */
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  /* 🔥 Dark Mode Header Styling */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 15px 0;
+    gap: 40px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Header Links */
+  .nav-link {
+    color: #bbb;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: monospace;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Hover Effect */
+  .nav-link:hover {
+    color: #00bcd4;
+  }
+  
+  /* Active Link Effect */
+  .nav-link:active {
+    color: #ffeb3b;
+  }
+  
+  /* Responsive Navbar */
+  @media (max-width: 600px) {
+    .header {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 0;
+    }
+  }
+  
+  /* 🔥 Dark Mode Table Styling */
+  .table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .dark-table {
+    width: 80%;
+    border-collapse: collapse;
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Table Header */
+  .dark-table th {
+    background-color: #333;
+    color: #00bcd4;
+    padding: 12px;
+    text-transform: uppercase;
+  }
+  
+  /* Table Data */
+  .dark-table td {
+    padding: 12px;
+    text-align: center;
+    color: #ddd;
+  }
+  
+  /* Alternate Row Colors */
+  .dark-table tr:nth-child(even) {
+    background-color: #252525;
+  }
+  
+  /* Hover Effect */
+  .dark-table tr:hover {
+    background-color: #333;
+    transition: 0.3s;
+  }
+  
+  /* Responsive Table */
+  @media (max-width: 600px) {
+    .dark-table {
+      width: 95%;
+    }
+  }
+
+  
+  /* ✅ Total Price Section Styling */
+.total-price {
+    width: 81%;
+    margin-top: 20px;
+    padding: 15px 0;
+    background: #00bcd4;
+    color: #121212;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Responsive Table */
+  @media (max-width: 600px) {
+    .dark-table {
+      width: 95%;
+    }
+    
+    .total-price {
+      font-size: 1.2rem;
+      padding: 10px 15px;
+    }
+  }
