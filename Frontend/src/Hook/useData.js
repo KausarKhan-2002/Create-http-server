@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useItems } from "../src/Context/ItemsProvider";
+import { useItems } from "../Context/ItemsProvider";
 import { useLocation, useParams } from "react-router-dom";
 
 const useData = () => {

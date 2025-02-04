@@ -1,4 +1,4 @@
-import useData from "../../Hook/useData";
+import useData from "../Hook/useData";
 import { useItems } from "../Context/ItemsProvider";
 
 const Data = () => {
