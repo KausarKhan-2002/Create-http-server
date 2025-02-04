@@ -1,25 +1,52 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [active, setActive] = useState("home");
+
   return (
     <header>
       <nav className="navbar">
-        <Link className="nav-link" to={"/"}>
+        <Link
+          onClick={() => setActive("home")}
+          className={`nav-link ${active == "home" && "active"}`}
+          to={"/"}
+        >
           Home
         </Link>
-        <Link className="nav-link" to={"/items/electronics"}>
+        <Link
+          onClick={() => setActive("electronics")}
+          className={`nav-link ${active == "electronics" && "active"}`}
+          to={"/items/electronics"}
+        >
           Electronics
         </Link>
-        <Link className="nav-link" to={"/items/furniture"}>
+        <Link
+          onClick={() => setActive("furniture")}
+          className={`nav-link ${active == "furniture" && "active"}`}
+          to={"/items/furniture"}
+        >
           Furniture
         </Link>
-        <Link className="nav-link" to={"/items/clothing"}>
+        <Link
+          onClick={() => setActive("clothing")}
+          className={`nav-link ${active == "clothing" && "active"}`}
+          to={"/items/clothing"}
+        >
           Clothing
         </Link>
-        <Link className="nav-link" to={"/items/books"}>
+        <Link
+          onClick={() => setActive("books")}
+          className={`nav-link ${active == "books" && "active"}`}
+          to={"/items/books"}
+        >
           Books
         </Link>
-        <Link className="nav-link" to={"/items/expensive"}>
+        <Link
+          onClick={() => setActive("expensive")}
+          className={`nav-link ${active == "expensive" && "active"}`}
+          to={"/items/expensive"}
+        >
           Expensive
         </Link>
       </nav>

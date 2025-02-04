@@ -44,6 +44,10 @@ body {
   .nav-link:active {
     color: #ffeb3b;
   }
+
+  .active {
+    color: #00bcd4;
+  }
   
   /* Responsive Navbar */
   @media (max-width: 600px) {
