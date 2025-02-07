@@ -36,13 +36,13 @@ const httpServer = http.createServer((req, res) => {
 
   if (req.method == "GET" && req.url == "/") {
     res.end(JSON.stringify(items));
-    return
+    return;
   }
 
   if (req.method == "GET" && req.url == "/items/expensive") {
-    const filter = items.filter(item => item.price >= 500)
-    res.end(JSON.stringify(filter))
-    return
+    const filter = items.filter((item) => item.price >= 500);
+    res.end(JSON.stringify(filter));
+    return;
   }
 
   for (let i of subItems) {
@@ -55,7 +55,6 @@ const httpServer = http.createServer((req, res) => {
     }
   }
 });
-
 
 httpServer.listen(5678, () => {
   console.log("Server is running on 5678 port ");
